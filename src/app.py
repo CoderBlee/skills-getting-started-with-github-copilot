@@ -26,8 +26,7 @@ activities = {
         "schedule": "Fridays, 3:30 PM - 5:00 PM",
         "max_participants": 12,
         "participants": ["michael@mergington.edu", "daniel@mergington.edu"]
-        },        if email in activity["participants"]:
-            raise HTTPException(status_code=400, detail="Student is already signed up")
+        },
         "Basketball Team": {
             "description": "Join the basketball team and compete in inter-school tournaments",
             "schedule": "Tuesdays and Thursdays, 4:00 PM - 6:00 PM",
