@@ -1,4 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
+// JavaScript to toggle dark mode
+const toggleButton = document.querySelector('.dark-mode-toggle');
+toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggleButton.classList.toggle('dark');
+});document.addEventListener("DOMContentLoaded", () => {
   const activitiesList = document.getElementById("activities-list");
   const activitySelect = document.getElementById("activity");
   const signupForm = document.getElementById("signup-form");
